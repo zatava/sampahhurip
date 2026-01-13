@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Bank Sampah Kembang Hurip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #065f46;
+      --green-light: #0f9d58;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+      --text: #111;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--gray);
+      color: var(--text);
+      overflow-x: hidden;
+       background-image: url('WhatsApp Image 2025-05-16 at 19.46.47_bf194195.jpg'); /* ganti sesuai lokasi gambar kamu */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 250px;
+      background: var(--green);
+      color: var(--white);
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar h2 {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
+    .sidebar a {
+      display: block;
+      color: var(--white);
+      text-decoration: none;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      font-weight: 500;
+    }
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: var(--green-light);
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 270px;
+      padding: 30px;
+    }
+    section {
+      background: var(--white);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    thead {
+      background: var(--green);
+      color: #fff;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    .btn-cta {
+      background: var(--green);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+    .btn-cta:hover {
+      background: var(--green-light);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    footer {
+       background-color: #066b4f;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+    }
+
+    @media (max-width: 991px) {
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .main-content {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h4>Bank Sampah Kembang Hurip</h4>
+    <a href="#beranda" class="active">🏠 Beranda</a>
+    <a href="#tentang">📖 Tentang</a>
+    <a href="#visimisi">🎯 Visi & Misi</a>
+    <a href="#laporan">📊 Laporan</a>
+    <a href="#pendaftaran">📝 Pendaftaran</a>
+    <a href="#kontak">📞 Kontak</a>
+  </div>
+  <div class="main-content">
+    <section id="beranda">
+      <h1>Selamat Datang di Bank Sampah Kembang Hurip</h1>
+      <p>
+       Sistem pengelolaan sampah digital yang memanfaatkan aplikasi web untuk memudahkan proses pengelolaan bank sampah secara efisien dan transparan. Sistem ini mengubah proses manual yang seringkali rentan kesalahan menjadi proses digital yang praktis, mulai dari pencatatan sampah, penimbangan, hingga pengelolaan tabungan nasabah. 
+      </p>
+    </section>
+
+    <section id="tentang" class="page" style="display:none;">
+      <h2>Tentang Bank Sampah</h2>
+      <p>
+        Pada Minggu, 29 September 2019, telah diadakan pembentukan Bank Sampah Kembang Hurip di wilayah RW 04,
+        Tanjung Hurip. Kegiatan ini disetujui oleh warga RW 04, termasuk Ketua RT, Ketua RW, serta tokoh masyarakat.
+      </p>
+      <p>
+        Menurut Bpk. H Sutoyon, Bank Sampah adalah tempat di mana masyarakat menyetorkan sampah yang telah dipilah
+        (plastik, kertas, logam, dll) dan mendapatkan imbalan berupa uang atau tabungan.Konsepnya mirip dengan bank keuangan, tetapi yang disetorkan bukan uang, melainkan sampah yang memiliki nilai jual.
+           Menurut Bpk H. Sutoyon selaku pengelola Bank Sampah adalah program pemerintah Kota Tasikmalaya, regulasinya adalah Undang-Undang No. 8 tahun 2008 Bank sampah itu adalah program nasional, kemudian dinamanya oleh daerah dalam rangka meningkatkan pengurangan sampah di sumber. Jadi definisi pengurangan sampah di sumber itu adalah terkurangnya sampah yang dikelola oleh BNSLH dibantu oleh masyarakat di tingkat RT/RW. Bentuknya adalah pengangkutan, pemilahan, pemanfaatan, atau daur ulang.
+           Bank Sampah Menurut Ibu. Ucu Sumiati selaku Pengurus di kembang Hurip Bank sampah adalah tempat pengelolaan sampah dengan sistem perbankan, di mana masyarakat menabung sampah yang memiliki nilai ekonomis, seperti plastik dan kertas. Konsep ini bertujuan untuk mengelola sampah melalui prinsip 3R (reduce, reuse, dan recycle) dan mengubah sampah menjadi barang bernilai ekonomi melalui sistem tabungan. "Nasabah" bank sampah dapat menyimpan tabungan sampah mereka dan dapat menukarnya untuk kebutuhan pokok, membayar tagihan, atau bahkan dikonversi menjadi uang tunai. 
+        </p>
+      </p>
+    </section>
+
+    <section id="visimisi" class="page" style="display:none;">
+      <h2>Visi & Misi</h2>
+      <h3>Visi</h3>
+      <ul>
+        <li>Menjadikan Bank Sampah Kembang Hurip sebagai wadah komunitas warga yang peduli lingkungan dan kesejahteraan.</li>
+        <li>Mewujudkan lingkungan hidup yang sehat dan bersih melalui pengelolaan sampah yang berkelanjutan.</li>
+        <li>Mewujudkan ekonomi hijau dengan mengubah sampah menjadi barang bernilai ekonomis.</li>
+        <li>Mewujudkan masyarakat yang sadar dan peduli terhadap lingkungan melalui partisipasi aktif dalam pengelolaan sampah.</li>
+      </ul>
+      <h3>Misi</h3>
+      <ul>
+        <li>Meningkatkan partisipasi masyarakat dalam pengelolaan sampah anorganik.</li>
+        <li>Menyediakan sistem informasi yang transparan dan mudah digunakan.</li>
+        <li>Mengedukasi warga Tanjung Hurip dalam daur ulang dan kerajinan tangan.</li>
+        <li>Membentuk dan membina bank sampah di berbagai wilayah untuk memperluas jangkauan program.</li>
+      </ul>
+    </section>
+
+    <section id="laporan" class="page" style="display:none;">
+      <h2>Laporan Pencatatan Sampah (Tahun 2024)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nama Pelanggan</th>
+            <th>Jenis Sampah</th>
+            <th>Berat(kg)</th>
+            <th>Harga(Rp)</th>
+            <th>Tanggal Transaksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Endang</td><td>plastik</td><td>3kg</td><td>5000</td><td>12-05-2024</td></tr>
+          <tr><td>Agus</td><td>logam</td><td>10kg</td><td>25000</td><td>17-05-2024</td></tr>
+          <tr><td>Tatang</td><td>Kertas</td><td>2kg</td><td>7000</td><td>19-05-2024</td></tr>
+          <tr><td>Asep</td><td>Kaca</td><td>4kg</td><td>8500</td><td>17-08-2024</td></tr>
+          <tr><td>Opang</td><td>Logam</td><td>6kg</td><td>14000</td><td>20-09-2024</td></tr>
+          <tr><td>Cecep</td><td>plastik</td><td>5kg</td><td>7000</td><td>27-10-2024</td></tr>
+          <tr><th>Jumlah</th><th>Jenis Sampah Daur Ulang</th><th>30kg</th><th>66500</th><th>2024</th></tr>
+        </tbody>
+      </table>
+      <a href="http://localhost/Banksampahprojek/" class="btn-cta">Tambahkan Laporan Pencatatan</a>
+    </section>
+
+    <section id="pendaftaran" class="page" style="display:none;">
+      <h2>Pendaftaran Anggota</h2>
+      <form action="https://script.google.com/macros/s/AKfycbwDoxCmL70t1-dX6KyXe1Rn3drx0-O2UfinDLcL8wpvXG9ex_oVaNP49mpl72x6HJ08Ug/exec" method="POST">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="telepon" class="form-label">Nomor Telepon</label>
+          <input type="tel" id="telepon" name="telepon" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="alamat" class="form-label">Alamat</label>
+          <textarea id="alamat" name="alamat" rows="3" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn-cta">Daftar</button>
+      </form>
+    </section>
+
+    <section id="kontak" class="page" style="display:none;">
+      <h2>Kontak Kami</h2>
+      <p>Hubungi kami untuk informasi lebih lanjut:</p>
+      <ul>
+        <li>Email: <a href="mailto:sendysetyawan842@gmail.com">sendysetyawan842@gmail.com</a></li>
+        <li>Telepon: <a href="tel:+628986762055">+62 898 6762 055</a></li>
+        <li>Alamat: Jl. Kembang Hurip No.4, Kota Tasikmalaya</li>
+      </ul>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8YHLrXNzX5wZMIN25CUN4DtXIgP32SzuK58XEmLkueUGiCA/viewform?usp=sharing" class="btn-cta">Berikan Pendapat</a>
+    </section>
+
+  </div>
+
+  <script>
+  // ambil semua link sidebar dan section halaman
+  const links = document.querySelectorAll(".sidebar a");
+  const pages = document.querySelectorAll(".page, #beranda");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault(); // cegah scroll ke anchor
+
+      // hapus class aktif di semua link
+      links.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+
+      // sembunyikan semua halaman
+      pages.forEach(page => page.style.display = "none");
+
+      // ambil id target dari href (misal #tentang)
+      const target = this.getAttribute("href");
+      const section = document.querySelector(target);
+
+      // tampilkan section yang sesuai
+      if (section) section.style.display = "block";
+    });
+  });
+
+// tampilkan beranda pertama kali
+document.querySelector("#beranda").style.display = "block";
+</script>
+
+   <footer>
+      &copy; 2025 Bank Sampah Kembang Hurip. Semua Hak Dilindungi.
+    </footer>
+</body>
+</html>
